@@ -1,0 +1,6711 @@
+/* Sign Up Version 4 */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+background: #FFFFFF;
+border-radius: 9px;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 375px;
+height: 732px;
+left: 0px;
+top: 0px;
+
+
+
+/* Head */
+
+width: 375px;
+height: 219px;
+
+background: #0D0D1B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Star */
+
+position: absolute;
+width: 376px;
+height: 272px;
+left: -1px;
+top: 0px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 1040px;
+height: 692px;
+left: -320px;
+top: -155px;
+
+background: radial-gradient(84.27% 54.45% at 50% 43.26%, #FFFFFF 0%, rgba(217, 217, 217, 0) 100%);
+
+
+/* Group 11 */
+
+position: absolute;
+width: 852px;
+height: 531.55px;
+left: calc(50% - 852px/2 + 12.08px);
+top: calc(50% - 531.55px/2 + 54.85px);
+
+opacity: 0.7;
+
+
+/* Star, Round, 2.36 */
+
+position: absolute;
+width: 1.4px;
+height: 1.4px;
+left: 316.92px;
+top: 279.66px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.60 */
+
+position: absolute;
+width: 1.54px;
+height: 1.54px;
+left: -157.25px;
+top: 384.44px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.52 */
+
+position: absolute;
+width: 1.49px;
+height: 1.49px;
+left: 439.46px;
+top: 384.44px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.30 */
+
+position: absolute;
+width: 1.36px;
+height: 1.36px;
+left: 431.76px;
+top: 54.71px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.93 */
+
+position: absolute;
+width: 1.73px;
+height: 1.73px;
+left: 72.43px;
+top: 205.07px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.35 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: 418.14px;
+top: 155.94px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.10 */
+
+position: absolute;
+width: 1.24px;
+height: 1.24px;
+left: 547.2px;
+top: 0.25px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.04 */
+
+position: absolute;
+width: 1.21px;
+height: 1.21px;
+left: 544.24px;
+top: 38.14px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.16 */
+
+position: absolute;
+width: 1.28px;
+height: 1.28px;
+left: 6.13px;
+top: 228.75px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.06 */
+
+position: absolute;
+width: 1.22px;
+height: 1.22px;
+left: 198.52px;
+top: 418.19px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.92 */
+
+position: absolute;
+width: 1.73px;
+height: 1.73px;
+left: 399.2px;
+top: -63.09px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.37 */
+
+position: absolute;
+width: 1.4px;
+height: 1.4px;
+left: 148.8px;
+top: 340.04px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.83 */
+
+position: absolute;
+width: 1.67px;
+height: 1.67px;
+left: 344.15px;
+top: 302.16px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.72 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: -175.02px;
+top: 159.49px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.10 */
+
+position: absolute;
+width: 1.24px;
+height: 1.24px;
+left: 1.99px;
+top: 168.37px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.54 */
+
+position: absolute;
+width: 1.5px;
+height: 1.5px;
+left: 424.06px;
+top: 340.64px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.77 */
+
+position: absolute;
+width: 1.64px;
+height: 1.64px;
+left: 17.97px;
+top: 383.85px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.62 */
+
+position: absolute;
+width: 1.55px;
+height: 1.55px;
+left: 7.31px;
+top: 432.39px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.67 */
+
+position: absolute;
+width: 1.58px;
+height: 1.58px;
+left: -45.37px;
+top: 249.47px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.03 */
+
+position: absolute;
+width: 1.2px;
+height: 1.2px;
+left: 14.42px;
+top: -8.04px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.33 */
+
+position: absolute;
+width: 1.38px;
+height: 1.38px;
+left: 133.41px;
+top: 99.7px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.25 */
+
+position: absolute;
+width: 1.33px;
+height: 1.33px;
+left: 624.74px;
+top: 194.42px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.57 */
+
+position: absolute;
+width: 1.52px;
+height: 1.52px;
+left: 12.64px;
+top: 49.98px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.32 */
+
+position: absolute;
+width: 1.37px;
+height: 1.37px;
+left: 524.11px;
+top: 237.04px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.59 */
+
+position: absolute;
+width: 1.54px;
+height: 1.54px;
+left: 583.31px;
+top: 358.99px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.16 */
+
+position: absolute;
+width: 1.28px;
+height: 1.28px;
+left: 181.36px;
+top: 292.09px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.02 */
+
+position: absolute;
+width: 1.19px;
+height: 1.19px;
+left: 260.09px;
+top: 268.42px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.35 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: 229.3px;
+top: 385.03px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.36 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: 75.98px;
+top: 424.11px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.17 */
+
+position: absolute;
+width: 1.29px;
+height: 1.29px;
+left: 5.54px;
+top: 430.03px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.35 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: 69.47px;
+top: 42.87px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.29 */
+
+position: absolute;
+width: 1.36px;
+height: 1.36px;
+left: 502.21px;
+top: 81.35px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.57 */
+
+position: absolute;
+width: 1.52px;
+height: 1.52px;
+left: 445.97px;
+top: 334.72px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.63 */
+
+position: absolute;
+width: 1.56px;
+height: 1.56px;
+left: 30.4px;
+top: 380.89px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.50 */
+
+position: absolute;
+width: 1.48px;
+height: 1.48px;
+left: -81.48px;
+top: 275.52px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.79 */
+
+position: absolute;
+width: 1.65px;
+height: 1.65px;
+left: 570.87px;
+top: 43.47px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.91 */
+
+position: absolute;
+width: 1.72px;
+height: 1.72px;
+left: 529.44px;
+top: 21.56px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.91 */
+
+position: absolute;
+width: 1.73px;
+height: 1.73px;
+left: 463.14px;
+top: 387.4px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.05 */
+
+position: absolute;
+width: 1.21px;
+height: 1.21px;
+left: -146.6px;
+top: 270.78px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.98 */
+
+position: absolute;
+width: 1.77px;
+height: 1.77px;
+left: 237px;
+top: 333.53px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.41 */
+
+position: absolute;
+width: 1.43px;
+height: 1.43px;
+left: -138.9px;
+top: 130.49px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.61 */
+
+position: absolute;
+width: 1.55px;
+height: 1.55px;
+left: 605.21px;
+top: 402.2px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.40 */
+
+position: absolute;
+width: 1.42px;
+height: 1.42px;
+left: 262.46px;
+top: 101.48px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.13 */
+
+position: absolute;
+width: 1.26px;
+height: 1.26px;
+left: 294.42px;
+top: -34.08px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.39 */
+
+position: absolute;
+width: 1.41px;
+height: 1.41px;
+left: 126.89px;
+top: 395.69px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.96 */
+
+position: absolute;
+width: 1.75px;
+height: 1.75px;
+left: 4.95px;
+top: 248.88px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.05 */
+
+position: absolute;
+width: 1.21px;
+height: 1.21px;
+left: 580.94px;
+top: 380.3px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.93 */
+
+position: absolute;
+width: 1.73px;
+height: 1.73px;
+left: 371.38px;
+top: 418.78px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.55 */
+
+position: absolute;
+width: 1.51px;
+height: 1.51px;
+left: -50.7px;
+top: 107.99px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.23 */
+
+position: absolute;
+width: 1.32px;
+height: 1.32px;
+left: -99.83px;
+top: 397.47px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.79 */
+
+position: absolute;
+width: 1.65px;
+height: 1.65px;
+left: -162.58px;
+top: 196.79px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.63 */
+
+position: absolute;
+width: 1.56px;
+height: 1.56px;
+left: 586.27px;
+top: 386.81px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.53 */
+
+position: absolute;
+width: 1.5px;
+height: 1.5px;
+left: -199.28px;
+top: 39.91px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.70 */
+
+position: absolute;
+width: 1.6px;
+height: 1.6px;
+left: 591.59px;
+top: 109.17px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.65 */
+
+position: absolute;
+width: 1.57px;
+height: 1.57px;
+left: 232.26px;
+top: 440.09px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.95 */
+
+position: absolute;
+width: 1.75px;
+height: 1.75px;
+left: 429.39px;
+top: 262.5px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.56 */
+
+position: absolute;
+width: 1.51px;
+height: 1.51px;
+left: 313.37px;
+top: 392.73px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.98 */
+
+position: absolute;
+width: 1.76px;
+height: 1.76px;
+left: -176.2px;
+top: 404.57px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.30 */
+
+position: absolute;
+width: 1.36px;
+height: 1.36px;
+left: -121.74px;
+top: 23.34px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.34 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: 122.75px;
+top: 114.5px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.27 */
+
+position: absolute;
+width: 1.34px;
+height: 1.34px;
+left: 373.16px;
+top: 63px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.66 */
+
+position: absolute;
+width: 1.57px;
+height: 1.57px;
+left: -170.87px;
+top: 113.91px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.46 */
+
+position: absolute;
+width: 1.46px;
+height: 1.46px;
+left: 1.39px;
+top: 28.07px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.08 */
+
+position: absolute;
+width: 1.23px;
+height: 1.23px;
+left: -204.61px;
+top: 303.93px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.50 */
+
+position: absolute;
+width: 1.48px;
+height: 1.48px;
+left: -79.71px;
+top: 384.44px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.89 */
+
+position: absolute;
+width: 1.71px;
+height: 1.71px;
+left: -206.98px;
+top: 259.54px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.61 */
+
+position: absolute;
+width: 1.55px;
+height: 1.55px;
+left: 394.47px;
+top: 330.57px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.99 */
+
+position: absolute;
+width: 1.77px;
+height: 1.77px;
+left: 575.02px;
+top: 258.94px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.33 */
+
+position: absolute;
+width: 1.38px;
+height: 1.38px;
+left: 228.12px;
+top: 95.56px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.93 */
+
+position: absolute;
+width: 1.74px;
+height: 1.74px;
+left: 525.88px;
+top: 303.34px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.13 */
+
+position: absolute;
+width: 1.26px;
+height: 1.26px;
+left: 611.72px;
+top: -48.29px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.59 */
+
+position: absolute;
+width: 1.53px;
+height: 1.53px;
+left: 132.81px;
+top: 151.8px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.34 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: -90.95px;
+top: -51.84px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.94 */
+
+position: absolute;
+width: 1.74px;
+height: 1.74px;
+left: 112.09px;
+top: 390.95px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.39 */
+
+position: absolute;
+width: 1.41px;
+height: 1.41px;
+left: -133.58px;
+top: 173.11px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.10 */
+
+position: absolute;
+width: 1.25px;
+height: 1.25px;
+left: 134.59px;
+top: 448.97px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.32 */
+
+position: absolute;
+width: 1.38px;
+height: 1.38px;
+left: -157.25px;
+top: 361.36px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.01 */
+
+position: absolute;
+width: 1.19px;
+height: 1.19px;
+left: -15.18px;
+top: 320.51px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.35 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: 151.16px;
+top: 443.64px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.44 */
+
+position: absolute;
+width: 1.44px;
+height: 1.44px;
+left: 473.2px;
+top: 161.27px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.43 */
+
+position: absolute;
+width: 1.44px;
+height: 1.44px;
+left: 206.22px;
+top: 77.8px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.34 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: -90.36px;
+top: 145.88px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.86 */
+
+position: absolute;
+width: 1.69px;
+height: 1.69px;
+left: 47.57px;
+top: 357.8px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.11 */
+
+position: absolute;
+width: 1.25px;
+height: 1.25px;
+left: 599.29px;
+top: -74.93px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.67 */
+
+position: absolute;
+width: 1.58px;
+height: 1.58px;
+left: 560.22px;
+top: 312.81px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.68 */
+
+position: absolute;
+width: 1.59px;
+height: 1.59px;
+left: -62.54px;
+top: 180.8px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.51 */
+
+position: absolute;
+width: 1.49px;
+height: 1.49px;
+left: 604.62px;
+top: -47.11px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.90 */
+
+position: absolute;
+width: 1.72px;
+height: 1.72px;
+left: 112.09px;
+top: 434.76px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.29 */
+
+position: absolute;
+width: 1.35px;
+height: 1.35px;
+left: -111.08px;
+top: 378.52px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.12 */
+
+position: absolute;
+width: 1.26px;
+height: 1.26px;
+left: 75.98px;
+top: 313.41px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.58 */
+
+position: absolute;
+width: 1.53px;
+height: 1.53px;
+left: 618.83px;
+top: 360.76px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.42 */
+
+position: absolute;
+width: 1.43px;
+height: 1.43px;
+left: 77.76px;
+top: 324.65px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.90 */
+
+position: absolute;
+width: 1.72px;
+height: 1.72px;
+left: -136.54px;
+top: 44.06px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.65 */
+
+position: absolute;
+width: 1.57px;
+height: 1.57px;
+left: -118.78px;
+top: -18.1px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.28 */
+
+position: absolute;
+width: 1.35px;
+height: 1.35px;
+left: 335.86px;
+top: 401.61px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.88 */
+
+position: absolute;
+width: 1.71px;
+height: 1.71px;
+left: 301.53px;
+top: 253.62px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.67 */
+
+position: absolute;
+width: 1.58px;
+height: 1.58px;
+left: 283.17px;
+top: -57.76px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.13 */
+
+position: absolute;
+width: 1.26px;
+height: 1.26px;
+left: -182.12px;
+top: 112.13px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.29 */
+
+position: absolute;
+width: 1.36px;
+height: 1.36px;
+left: -48.33px;
+top: 54.71px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.19 */
+
+position: absolute;
+width: 1.3px;
+height: 1.3px;
+left: -66.68px;
+top: 213.36px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.75 */
+
+position: absolute;
+width: 1.63px;
+height: 1.63px;
+left: -166.73px;
+top: 331.16px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.46 */
+
+position: absolute;
+width: 1.46px;
+height: 1.46px;
+left: 584.49px;
+top: 416.41px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.23 */
+
+position: absolute;
+width: 1.32px;
+height: 1.32px;
+left: 158.86px;
+top: 319.92px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.93 */
+
+position: absolute;
+width: 1.74px;
+height: 1.74px;
+left: -148.97px;
+top: 59.45px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.90 */
+
+position: absolute;
+width: 1.72px;
+height: 1.72px;
+left: 42.83px;
+top: 348.92px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.91 */
+
+position: absolute;
+width: 1.72px;
+height: 1.72px;
+left: 421.1px;
+top: 308.08px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.33 */
+
+position: absolute;
+width: 1.38px;
+height: 1.38px;
+left: -141.86px;
+top: 417.59px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.35 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: 187.27px;
+top: 227.57px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.03 */
+
+position: absolute;
+width: 1.2px;
+height: 1.2px;
+left: 6.72px;
+top: 422.33px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.35 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: 90.78px;
+top: 401.61px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.54 */
+
+position: absolute;
+width: 1.5px;
+height: 1.5px;
+left: 491.55px;
+top: -67.23px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.81 */
+
+position: absolute;
+width: 1.66px;
+height: 1.66px;
+left: 354.21px;
+top: 116.28px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.72 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: 29.81px;
+top: 182.58px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.05 */
+
+position: absolute;
+width: 1.22px;
+height: 1.22px;
+left: 512.27px;
+top: 36.95px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.67 */
+
+position: absolute;
+width: 1.58px;
+height: 1.58px;
+left: 418.14px;
+top: 454.3px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.99 */
+
+position: absolute;
+width: 1.77px;
+height: 1.77px;
+left: 457.81px;
+top: 417.59px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.87 */
+
+position: absolute;
+width: 1.7px;
+height: 1.7px;
+left: 51.12px;
+top: 234.67px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.47 */
+
+position: absolute;
+width: 1.46px;
+height: 1.46px;
+left: -12.81px;
+top: 370.83px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.71 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: 231.08px;
+top: 328.8px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.32 */
+
+position: absolute;
+width: 1.38px;
+height: 1.38px;
+left: -108.12px;
+top: 51.16px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.70 */
+
+position: absolute;
+width: 1.6px;
+height: 1.6px;
+left: -166.13px;
+top: 111.54px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.49 */
+
+position: absolute;
+width: 1.47px;
+height: 1.47px;
+left: 35.73px;
+top: 7.95px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.25 */
+
+position: absolute;
+width: 1.33px;
+height: 1.33px;
+left: 499.84px;
+top: 310.45px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.02 */
+
+position: absolute;
+width: 1.2px;
+height: 1.2px;
+left: 536.54px;
+top: 188.5px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.73 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: 358.95px;
+top: 190.87px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.37 */
+
+position: absolute;
+width: 1.4px;
+height: 1.4px;
+left: 443.01px;
+top: -42.37px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.72 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: 77.76px;
+top: 87.27px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.24 */
+
+position: absolute;
+width: 1.32px;
+height: 1.32px;
+left: -161.99px;
+top: 50.57px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.46 */
+
+position: absolute;
+width: 1.46px;
+height: 1.46px;
+left: -163.17px;
+top: 447.19px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.90 */
+
+position: absolute;
+width: 1.72px;
+height: 1.72px;
+left: 308.04px;
+top: 250.07px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.27 */
+
+position: absolute;
+width: 1.34px;
+height: 1.34px;
+left: 353.62px;
+top: 26.3px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.19 */
+
+position: absolute;
+width: 1.3px;
+height: 1.3px;
+left: -43px;
+top: 381.48px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.18 */
+
+position: absolute;
+width: 1.29px;
+height: 1.29px;
+left: -157.85px;
+top: 452.52px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.91 */
+
+position: absolute;
+width: 1.72px;
+height: 1.72px;
+left: 16.19px;
+top: 39.32px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.98 */
+
+position: absolute;
+width: 1.77px;
+height: 1.77px;
+left: 396.24px;
+top: 190.87px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.07 */
+
+position: absolute;
+width: 1.23px;
+height: 1.23px;
+left: 387.95px;
+top: 6.17px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.19 */
+
+position: absolute;
+width: 1.29px;
+height: 1.29px;
+left: 110.32px;
+top: 270.78px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.32 */
+
+position: absolute;
+width: 1.37px;
+height: 1.37px;
+left: 486.81px;
+top: 197.97px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.59 */
+
+position: absolute;
+width: 1.53px;
+height: 1.53px;
+left: 424.66px;
+top: -29.94px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.88 */
+
+position: absolute;
+width: 1.7px;
+height: 1.7px;
+left: 242.92px;
+top: 57.08px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.56 */
+
+position: absolute;
+width: 1.52px;
+height: 1.52px;
+left: -84.44px;
+top: 167.78px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.91 */
+
+position: absolute;
+width: 1.72px;
+height: 1.72px;
+left: 593.37px;
+top: 363.13px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.87 */
+
+position: absolute;
+width: 1.7px;
+height: 1.7px;
+left: 437.68px;
+top: 304.53px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.99 */
+
+position: absolute;
+width: 1.77px;
+height: 1.77px;
+left: 495.1px;
+top: 155.35px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.62 */
+
+position: absolute;
+width: 1.55px;
+height: 1.55px;
+left: -100.42px;
+top: 430.62px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.41 */
+
+position: absolute;
+width: 1.43px;
+height: 1.43px;
+left: 120.38px;
+top: 264.86px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.91 */
+
+position: absolute;
+width: 1.72px;
+height: 1.72px;
+left: 393.87px;
+top: 240.59px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.95 */
+
+position: absolute;
+width: 1.74px;
+height: 1.74px;
+left: 292.05px;
+top: -50.07px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.20 */
+
+position: absolute;
+width: 1.3px;
+height: 1.3px;
+left: 515.82px;
+top: 74.25px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.66 */
+
+position: absolute;
+width: 1.58px;
+height: 1.58px;
+left: 481.49px;
+top: 141.14px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.75 */
+
+position: absolute;
+width: 1.63px;
+height: 1.63px;
+left: 270.74px;
+top: 222.83px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.36 */
+
+position: absolute;
+width: 1.4px;
+height: 1.4px;
+left: 624.15px;
+top: 305.12px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.65 */
+
+position: absolute;
+width: 1.57px;
+height: 1.57px;
+left: 228.71px;
+top: 391.55px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.09 */
+
+position: absolute;
+width: 1.24px;
+height: 1.24px;
+left: 485.04px;
+top: -26.98px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.72 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: 231.67px;
+top: -62.5px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.60 */
+
+position: absolute;
+width: 1.54px;
+height: 1.54px;
+left: -105.16px;
+top: 115.69px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.95 */
+
+position: absolute;
+width: 1.75px;
+height: 1.75px;
+left: -224.74px;
+top: 203.3px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.27 */
+
+position: absolute;
+width: 1.34px;
+height: 1.34px;
+left: 453.07px;
+top: -21.65px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.65 */
+
+position: absolute;
+width: 1.57px;
+height: 1.57px;
+left: 348.29px;
+top: 37.55px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.29 */
+
+position: absolute;
+width: 1.36px;
+height: 1.36px;
+left: 285.54px;
+top: 74.84px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.71 */
+
+position: absolute;
+width: 1.6px;
+height: 1.6px;
+left: 129.85px;
+top: 215.73px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.58 */
+
+position: absolute;
+width: 1.53px;
+height: 1.53px;
+left: 55.86px;
+top: 210.99px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.87 */
+
+position: absolute;
+width: 1.7px;
+height: 1.7px;
+left: 272.52px;
+top: 376.16px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.15 */
+
+position: absolute;
+width: 1.27px;
+height: 1.27px;
+left: 305.08px;
+top: 385.03px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.82 */
+
+position: absolute;
+width: 1.67px;
+height: 1.67px;
+left: 490.37px;
+top: 216.32px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.44 */
+
+position: absolute;
+width: 1.44px;
+height: 1.44px;
+left: -166.13px;
+top: 243.55px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.13 */
+
+position: absolute;
+width: 1.26px;
+height: 1.26px;
+left: -74.38px;
+top: 241.19px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.29 */
+
+position: absolute;
+width: 1.35px;
+height: 1.35px;
+left: 244.7px;
+top: 84.31px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.19 */
+
+position: absolute;
+width: 1.3px;
+height: 1.3px;
+left: 160.64px;
+top: 15.64px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.72 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: -220.6px;
+top: 164.23px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.13 */
+
+position: absolute;
+width: 1.26px;
+height: 1.26px;
+left: 493.92px;
+top: -54.8px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.93 */
+
+position: absolute;
+width: 1.73px;
+height: 1.73px;
+left: 350.07px;
+top: -47.7px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.36 */
+
+position: absolute;
+width: 1.4px;
+height: 1.4px;
+left: 247.66px;
+top: 250.07px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.13 */
+
+position: absolute;
+width: 1.26px;
+height: 1.26px;
+left: 377.89px;
+top: 417.59px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.82 */
+
+position: absolute;
+width: 1.67px;
+height: 1.67px;
+left: 522.33px;
+top: 145.88px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.64 */
+
+position: absolute;
+width: 1.56px;
+height: 1.56px;
+left: 262.46px;
+top: -11.59px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.92 */
+
+position: absolute;
+width: 1.73px;
+height: 1.73px;
+left: -84.44px;
+top: -71.97px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.19 */
+
+position: absolute;
+width: 1.3px;
+height: 1.3px;
+left: -40.04px;
+top: 73.66px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.82 */
+
+position: absolute;
+width: 1.67px;
+height: 1.67px;
+left: 528.84px;
+top: 338.86px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.09 */
+
+position: absolute;
+width: 1.24px;
+height: 1.24px;
+left: -143.05px;
+top: 239.41px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.69 */
+
+position: absolute;
+width: 1.59px;
+height: 1.59px;
+left: 624.15px;
+top: 278.48px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.40 */
+
+position: absolute;
+width: 1.42px;
+height: 1.42px;
+left: 417.55px;
+top: -38.82px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.86 */
+
+position: absolute;
+width: 1.69px;
+height: 1.69px;
+left: 225.16px;
+top: 312.22px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.92 */
+
+position: absolute;
+width: 1.73px;
+height: 1.73px;
+left: -45.96px;
+top: 238.82px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.41 */
+
+position: absolute;
+width: 1.42px;
+height: 1.42px;
+left: 7.91px;
+top: 218.69px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.63 */
+
+position: absolute;
+width: 1.56px;
+height: 1.56px;
+left: 392.1px;
+top: 105.03px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.78 */
+
+position: absolute;
+width: 1.64px;
+height: 1.64px;
+left: 593.37px;
+top: 69.51px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.41 */
+
+position: absolute;
+width: 1.43px;
+height: 1.43px;
+left: -160.81px;
+top: -68.42px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.72 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: 325.8px;
+top: 62.41px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.57 */
+
+position: absolute;
+width: 1.52px;
+height: 1.52px;
+left: 57.04px;
+top: -39.41px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.13 */
+
+position: absolute;
+width: 1.26px;
+height: 1.26px;
+left: -193.37px;
+top: 83.13px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.27 */
+
+position: absolute;
+width: 1.34px;
+height: 1.34px;
+left: 462.54px;
+top: 194.42px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.48 */
+
+position: absolute;
+width: 1.47px;
+height: 1.47px;
+left: 615.27px;
+top: 392.73px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.71 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: 119.79px;
+top: 123.38px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.80 */
+
+position: absolute;
+width: 1.65px;
+height: 1.65px;
+left: -183.89px;
+top: -10.4px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.98 */
+
+position: absolute;
+width: 1.77px;
+height: 1.77px;
+left: 155.9px;
+top: 56.49px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.70 */
+
+position: absolute;
+width: 1.6px;
+height: 1.6px;
+left: 399.2px;
+top: 367.87px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.30 */
+
+position: absolute;
+width: 1.36px;
+height: 1.36px;
+left: -124.7px;
+top: 376.75px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.46 */
+
+position: absolute;
+width: 1.45px;
+height: 1.45px;
+left: 171.88px;
+top: 99.7px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.78 */
+
+position: absolute;
+width: 1.65px;
+height: 1.65px;
+left: 113.28px;
+top: 253.02px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.55 */
+
+position: absolute;
+width: 1.51px;
+height: 1.51px;
+left: 103.21px;
+top: 56.49px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.34 */
+
+position: absolute;
+width: 1.38px;
+height: 1.38px;
+left: 197.93px;
+top: -32.31px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.04 */
+
+position: absolute;
+width: 1.21px;
+height: 1.21px;
+left: 414px;
+top: 68.33px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.17 */
+
+position: absolute;
+width: 1.28px;
+height: 1.28px;
+left: 389.73px;
+top: 424.11px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.63 */
+
+position: absolute;
+width: 1.56px;
+height: 1.56px;
+left: 69.47px;
+top: -64.27px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.68 */
+
+position: absolute;
+width: 1.59px;
+height: 1.59px;
+left: 480.3px;
+top: 298.01px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.01 */
+
+position: absolute;
+width: 1.19px;
+height: 1.19px;
+left: -1.57px;
+top: 274.93px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.70 */
+
+position: absolute;
+width: 1.6px;
+height: 1.6px;
+left: -200.47px;
+top: -63.68px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.23 */
+
+position: absolute;
+width: 1.32px;
+height: 1.32px;
+left: -63.72px;
+top: 182.58px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.50 */
+
+position: absolute;
+width: 1.48px;
+height: 1.48px;
+left: 31.59px;
+top: -44.74px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.97 */
+
+position: absolute;
+width: 1.76px;
+height: 1.76px;
+left: -44.78px;
+top: 195.6px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.51 */
+
+position: absolute;
+width: 1.49px;
+height: 1.49px;
+left: -86.22px;
+top: 3.21px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.79 */
+
+position: absolute;
+width: 1.65px;
+height: 1.65px;
+left: -96.28px;
+top: 136.41px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.85 */
+
+position: absolute;
+width: 1.69px;
+height: 1.69px;
+left: -127.06px;
+top: 399.24px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.23 */
+
+position: absolute;
+width: 1.32px;
+height: 1.32px;
+left: -59.58px;
+top: -33.49px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.60 */
+
+position: absolute;
+width: 1.54px;
+height: 1.54px;
+left: 472.01px;
+top: -7.44px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.28 */
+
+position: absolute;
+width: 1.35px;
+height: 1.35px;
+left: -183.89px;
+top: -24.61px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.93 */
+
+position: absolute;
+width: 1.74px;
+height: 1.74px;
+left: 55.26px;
+top: 454.89px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.88 */
+
+position: absolute;
+width: 1.71px;
+height: 1.71px;
+left: 135.77px;
+top: 424.11px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.23 */
+
+position: absolute;
+width: 1.32px;
+height: 1.32px;
+left: 163.6px;
+top: 337.68px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.88 */
+
+position: absolute;
+width: 1.71px;
+height: 1.71px;
+left: -168.5px;
+top: 83.72px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.20 */
+
+position: absolute;
+width: 1.3px;
+height: 1.3px;
+left: -46.55px;
+top: 355.44px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.67 */
+
+position: absolute;
+width: 1.58px;
+height: 1.58px;
+left: -140.68px;
+top: 424.7px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.07 */
+
+position: absolute;
+width: 1.23px;
+height: 1.23px;
+left: 26.85px;
+top: 100.89px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.36 */
+
+position: absolute;
+width: 1.4px;
+height: 1.4px;
+left: -72.01px;
+top: 408.12px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.20 */
+
+position: absolute;
+width: 1.3px;
+height: 1.3px;
+left: 214.51px;
+top: -70.19px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.65 */
+
+position: absolute;
+width: 1.57px;
+height: 1.57px;
+left: 321.65px;
+top: -19.88px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.64 */
+
+position: absolute;
+width: 1.56px;
+height: 1.56px;
+left: 316.92px;
+top: -2.71px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.36 */
+
+position: absolute;
+width: 1.39px;
+height: 1.39px;
+left: 196.75px;
+top: 266.05px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.27 */
+
+position: absolute;
+width: 1.34px;
+height: 1.34px;
+left: 447.74px;
+top: 349.52px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.03 */
+
+position: absolute;
+width: 1.2px;
+height: 1.2px;
+left: -3.34px;
+top: 311.63px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.34 */
+
+position: absolute;
+width: 1.38px;
+height: 1.38px;
+left: 570.28px;
+top: 225.2px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.66 */
+
+position: absolute;
+width: 1.57px;
+height: 1.57px;
+left: 219.83px;
+top: 410.49px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.16 */
+
+position: absolute;
+width: 1.28px;
+height: 1.28px;
+left: 138.73px;
+top: 447.78px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.43 */
+
+position: absolute;
+width: 1.44px;
+height: 1.44px;
+left: 445.97px;
+top: 12.09px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.02 */
+
+position: absolute;
+width: 1.2px;
+height: 1.2px;
+left: -126.47px;
+top: 185.54px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.70 */
+
+position: absolute;
+width: 1.6px;
+height: 1.6px;
+left: 180.76px;
+top: 30.44px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.21 */
+
+position: absolute;
+width: 1.31px;
+height: 1.31px;
+left: 596.33px;
+top: 305.12px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.63 */
+
+position: absolute;
+width: 1.56px;
+height: 1.56px;
+left: 437.09px;
+top: 30.44px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.38 */
+
+position: absolute;
+width: 1.41px;
+height: 1.41px;
+left: 39.28px;
+top: 0.25px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.92 */
+
+position: absolute;
+width: 1.73px;
+height: 1.73px;
+left: 512.27px;
+top: 271.38px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.70 */
+
+position: absolute;
+width: 1.6px;
+height: 1.6px;
+left: -225.92px;
+top: 133.45px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.87 */
+
+position: absolute;
+width: 1.7px;
+height: 1.7px;
+left: 96.7px;
+top: 58.86px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.38 */
+
+position: absolute;
+width: 1.41px;
+height: 1.41px;
+left: -66.09px;
+top: 0.25px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.12 */
+
+position: absolute;
+width: 1.26px;
+height: 1.26px;
+left: 326.39px;
+top: 409.9px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.39 */
+
+position: absolute;
+width: 1.42px;
+height: 1.42px;
+left: 463.14px;
+top: 3.8px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.07 */
+
+position: absolute;
+width: 1.23px;
+height: 1.23px;
+left: 197.34px;
+top: 260.13px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.52 */
+
+position: absolute;
+width: 1.49px;
+height: 1.49px;
+left: 96.7px;
+top: 312.81px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.82 */
+
+position: absolute;
+width: 1.67px;
+height: 1.67px;
+left: 511.68px;
+top: 283.81px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.59 */
+
+position: absolute;
+width: 1.53px;
+height: 1.53px;
+left: -83.85px;
+top: 177.84px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.38 */
+
+position: absolute;
+width: 1.41px;
+height: 1.41px;
+left: -153.11px;
+top: 20.97px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.52 */
+
+position: absolute;
+width: 1.49px;
+height: 1.49px;
+left: -154.3px;
+top: 286.77px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.86 */
+
+position: absolute;
+width: 1.69px;
+height: 1.69px;
+left: 506.35px;
+top: 21.56px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.77 */
+
+position: absolute;
+width: 1.64px;
+height: 1.64px;
+left: 54.08px;
+top: 303.34px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.71 */
+
+position: absolute;
+width: 1.61px;
+height: 1.61px;
+left: 403.35px;
+top: 250.07px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.16 */
+
+position: absolute;
+width: 1.28px;
+height: 1.28px;
+left: 289.1px;
+top: 57.08px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.14 */
+
+position: absolute;
+width: 1.27px;
+height: 1.27px;
+left: 345.33px;
+top: 342.41px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.43 */
+
+position: absolute;
+width: 1.44px;
+height: 1.44px;
+left: 179.58px;
+top: 64.18px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.10 */
+
+position: absolute;
+width: 1.25px;
+height: 1.25px;
+left: 354.21px;
+top: 439.5px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.67 */
+
+position: absolute;
+width: 1.58px;
+height: 1.58px;
+left: -1.57px;
+top: 165.41px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.08 */
+
+position: absolute;
+width: 1.23px;
+height: 1.23px;
+left: -45.96px;
+top: 52.34px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.07 */
+
+position: absolute;
+width: 1.23px;
+height: 1.23px;
+left: 251.8px;
+top: 298.61px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.46 */
+
+position: absolute;
+width: 1.46px;
+height: 1.46px;
+left: 268.37px;
+top: 441.27px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.89 */
+
+position: absolute;
+width: 1.71px;
+height: 1.71px;
+left: 415.18px;
+top: 270.19px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.80 */
+
+position: absolute;
+width: 1.66px;
+height: 1.66px;
+left: 266.6px;
+top: 137px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.56 */
+
+position: absolute;
+width: 1.51px;
+height: 1.51px;
+left: -71.42px;
+top: 156.53px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.57 */
+
+position: absolute;
+width: 1.52px;
+height: 1.52px;
+left: -195.14px;
+top: 22.15px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.14 */
+
+position: absolute;
+width: 1.27px;
+height: 1.27px;
+left: 336.45px;
+top: 0.84px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.82 */
+
+position: absolute;
+width: 1.67px;
+height: 1.67px;
+left: 351.25px;
+top: -51.84px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.11 */
+
+position: absolute;
+width: 1.25px;
+height: 1.25px;
+left: -191px;
+top: 265.46px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.50 */
+
+position: absolute;
+width: 1.48px;
+height: 1.48px;
+left: -127.66px;
+top: -66.64px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.50 */
+
+position: absolute;
+width: 1.48px;
+height: 1.48px;
+left: -24.65px;
+top: 218.1px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.22 */
+
+position: absolute;
+width: 1.31px;
+height: 1.31px;
+left: 383.81px;
+top: 216.91px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.61 */
+
+position: absolute;
+width: 1.55px;
+height: 1.55px;
+left: 58.22px;
+top: 74.25px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.14 */
+
+position: absolute;
+width: 1.27px;
+height: 1.27px;
+left: 615.87px;
+top: 32.81px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.39 */
+
+position: absolute;
+width: 1.41px;
+height: 1.41px;
+left: -56.03px;
+top: 258.94px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.23 */
+
+position: absolute;
+width: 1.32px;
+height: 1.32px;
+left: -221.19px;
+top: 26.3px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.32 */
+
+position: absolute;
+width: 1.38px;
+height: 1.38px;
+left: -25.24px;
+top: 450.74px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.42 */
+
+position: absolute;
+width: 1.43px;
+height: 1.43px;
+left: 542.46px;
+top: 414.63px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.08 */
+
+position: absolute;
+width: 1.23px;
+height: 1.23px;
+left: 77.76px;
+top: 8.54px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.10 */
+
+position: absolute;
+width: 1.25px;
+height: 1.25px;
+left: 193.79px;
+top: 402.2px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.77 */
+
+position: absolute;
+width: 1.64px;
+height: 1.64px;
+left: 120.38px;
+top: 75.43px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.51 */
+
+position: absolute;
+width: 1.49px;
+height: 1.49px;
+left: 546.01px;
+top: 49.39px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.16 */
+
+position: absolute;
+width: 1.28px;
+height: 1.28px;
+left: 179.58px;
+top: 329.98px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.56 */
+
+position: absolute;
+width: 1.52px;
+height: 1.52px;
+left: 196.75px;
+top: 320.51px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.01 */
+
+position: absolute;
+width: 1.19px;
+height: 1.19px;
+left: 124.53px;
+top: 4.99px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.06 */
+
+position: absolute;
+width: 1.22px;
+height: 1.22px;
+left: 583.9px;
+top: 97.93px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.32 */
+
+position: absolute;
+width: 1.37px;
+height: 1.37px;
+left: -204.02px;
+top: 125.16px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.61 */
+
+position: absolute;
+width: 1.54px;
+height: 1.54px;
+left: 52.3px;
+top: 109.17px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.48 */
+
+position: absolute;
+width: 1.47px;
+height: 1.47px;
+left: 245.29px;
+top: 160.68px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.68 */
+
+position: absolute;
+width: 1.58px;
+height: 1.58px;
+left: -44.19px;
+top: 0.84px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.53 */
+
+position: absolute;
+width: 1.5px;
+height: 1.5px;
+left: 590.41px;
+top: 277.3px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.31 */
+
+position: absolute;
+width: 1.37px;
+height: 1.37px;
+left: 624.15px;
+top: 25.71px;
+
+background: rgba(255, 255, 255, 0.3);
+
+
+/* Star, Round, 2.95 */
+
+position: absolute;
+width: 1.75px;
+height: 1.75px;
+left: 220.43px;
+top: -62.5px;
+
+background: rgba(255, 255, 255, 0.6);
+
+
+/* Star, Round, 2.19 */
+
+position: absolute;
+width: 1.29px;
+height: 1.29px;
+left: -43.59px;
+top: -16.92px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Star, Round, 2.04 */
+
+position: absolute;
+width: 1.21px;
+height: 1.21px;
+left: -222.96px;
+top: 354.25px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.07 */
+
+position: absolute;
+width: 1.22px;
+height: 1.22px;
+left: -217.64px;
+top: 180.8px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.58 */
+
+position: absolute;
+width: 1.53px;
+height: 1.53px;
+left: 540.68px;
+top: -16.92px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.49 */
+
+position: absolute;
+width: 1.48px;
+height: 1.48px;
+left: 215.1px;
+top: 334.13px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Star, Round, 2.34 */
+
+position: absolute;
+width: 1.38px;
+height: 1.38px;
+left: 126.3px;
+top: 100.89px;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Group 6 */
+
+position: absolute;
+width: 1248.18px;
+height: 806.84px;
+left: -314.18px;
+top: -77.17px;
+
+opacity: 0.6;
+
+
+/* Frame 15 */
+
+position: absolute;
+width: 1248.18px;
+height: 806.84px;
+left: -314.18px;
+top: -77.17px;
+
+opacity: 0.1;
+
+
+/* Frame 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 41.89px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 17;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 18;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 19;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 20;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 21;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 22;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 23;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 24;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 25;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 26;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 27;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 28;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 29;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 30;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 31;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 32;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 33;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 34;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 35;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 36;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 37;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 38;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 39;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 40;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 41;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 42;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 43;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 44;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 45;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 46;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 862.99px;
+
+border: 0.654481px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 47;
+flex-grow: 0;
+
+
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 41.89px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 17;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 18;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 19;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 20;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 21;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 22;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 23;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 24;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 25;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 26;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 27;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 28;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 29;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 30;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 31;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 32;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 33;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 34;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 35;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 36;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 37;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 38;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 39;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 40;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 41;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 42;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 43;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 44;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 45;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 46;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 2 */
+
+width: 0px;
+height: 1248.18px;
+
+border: 0.654481px solid #FFFFFF;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 47;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Rectangle 29 */
+
+position: absolute;
+width: 313.01px;
+height: 322.59px;
+left: 100px;
+top: -151.05px;
+
+background: linear-gradient(181.28deg, rgba(255, 255, 255, 0) 1.09%, rgba(255, 255, 255, 0.15) 82.08%);
+filter: blur(31.8666px);
+transform: matrix(0.88, 0.47, 0.47, -0.88, 0, 0);
+
+
+/* Headline */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 327px;
+height: 119px;
+left: 24px;
+top: 68px;
+
+
+
+/* arrow-narrow-left
+
+arrow
+narrow
+left
+back
+previous
+pointer
+point
+icon
+stroke
+outline
+*/
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 33.33%;
+bottom: 33.33%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 327px;
+height: 71px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Register */
+
+width: 327px;
+height: 42px;
+
+/* Heading/H1
+
+The quick brown fox jumps over the lazy dog
+*/
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 130%;
+/* identical to box height, or 42px */
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+
+color: #EEEEEE;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Sign Up */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+width: 327px;
+height: 17px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Already have an account? */
+
+width: 145px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* identical to box height, or 17px */
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Log In */
+
+width: 35px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 140%;
+/* identical to box height, or 17px */
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+text-decoration-line: underline;
+
+color: #4D81E7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Input */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 327px;
+height: 489px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 16px;
+
+width: 327px;
+height: 409px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Name */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 327px;
+height: 69px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+isolation: isolate;
+
+width: 155.5px;
+height: 69px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Title */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 59px;
+height: 21px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Email */
+
+width: 59px;
+height: 19px;
+
+/* Medium/Type@12
+
+The quick brown fox jumps over the lazy dog
+*/
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 160%;
+/* or 19px */
+letter-spacing: -0.02em;
+
+color: #6C7278;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Input Area */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 27px 14px;
+gap: 10px;
+
+width: 155.5px;
+height: 46px;
+
+/* Primary/0
+
+#FFFFFF
+*/
+background: #FFFFFF;
+border: 1px solid #EDF1F3;
+box-shadow: 0px 1px 2px rgba(228, 229, 231, 0.24);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Frame 33825 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 127.5px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* user
+
+user
+person
+account
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* yourname@gmail.com| */
+
+width: 207px;
+height: 21px;
+
+/* Body Small/Medium
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable.
+*/
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+letter-spacing: -0.01em;
+
+/* Secondary/500 */
+color: #1A1C1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* eye-off
+
+eye
+off
+view
+watch
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+isolation: isolate;
+
+width: 155.5px;
+height: 69px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Title */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 59px;
+height: 21px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Email */
+
+width: 59px;
+height: 19px;
+
+/* Medium/Type@12
+
+The quick brown fox jumps over the lazy dog
+*/
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 160%;
+/* or 19px */
+letter-spacing: -0.02em;
+
+color: #6C7278;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Input Area */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 27px 14px;
+gap: 10px;
+
+width: 155.5px;
+height: 46px;
+
+/* Primary/0
+
+#FFFFFF
+*/
+background: #FFFFFF;
+border: 1px solid #EDF1F3;
+box-shadow: 0px 1px 2px rgba(228, 229, 231, 0.24);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Frame 33825 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 127.5px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* user
+
+user
+person
+account
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* yourname@gmail.com| */
+
+width: 207px;
+height: 21px;
+
+/* Body Small/Medium
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable.
+*/
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+letter-spacing: -0.01em;
+
+/* Secondary/500 */
+color: #1A1C1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* eye-off
+
+eye
+off
+view
+watch
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+isolation: isolate;
+
+width: 327px;
+height: 69px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Title */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 30px;
+height: 21px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Email */
+
+width: 30px;
+height: 19px;
+
+/* Medium/Type@12
+
+The quick brown fox jumps over the lazy dog
+*/
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 160%;
+/* or 19px */
+letter-spacing: -0.02em;
+
+color: #6C7278;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Input Area */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 27px 14px;
+gap: 10px;
+
+width: 327px;
+height: 46px;
+
+/* Primary/0
+
+#FFFFFF
+*/
+background: #FFFFFF;
+border: 1px solid #EDF1F3;
+box-shadow: 0px 1px 2px rgba(228, 229, 231, 0.24);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Frame 33825 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 299px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* user
+
+user
+person
+account
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* yourname@gmail.com| */
+
+width: 207px;
+height: 21px;
+
+/* Body Small/Medium
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable.
+*/
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+letter-spacing: -0.01em;
+
+/* Secondary/500 */
+color: #1A1C1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* eye-off
+
+eye
+off
+view
+watch
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+isolation: isolate;
+
+width: 327px;
+height: 69px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Title */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 68px;
+height: 21px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Email */
+
+width: 68px;
+height: 19px;
+
+/* Medium/Type@12
+
+The quick brown fox jumps over the lazy dog
+*/
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 160%;
+/* or 19px */
+letter-spacing: -0.02em;
+
+color: #6C7278;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Input Area */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 27px 14px;
+gap: 10px;
+
+width: 327px;
+height: 46px;
+
+/* Primary/0
+
+#FFFFFF
+*/
+background: #FFFFFF;
+border: 1px solid #EDF1F3;
+box-shadow: 0px 1px 2px rgba(228, 229, 231, 0.24);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Frame 33825 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 273px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* user
+
+user
+person
+account
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* yourname@gmail.com| */
+
+width: 207px;
+height: 21px;
+
+/* Body Small/Medium
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable.
+*/
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+letter-spacing: -0.01em;
+
+/* Secondary/500 */
+color: #1A1C1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* calendar-due
+
+calendar
+due
+date
+deadline
+schedule
+icon
+stroke
+outline
+*/
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Secondary/300
+
+#ACB5BB
+*/
+border: 1.3px solid #ACB5BB;
+
+
+/* Phone Form */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+isolation: isolate;
+
+width: 327px;
+height: 69px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Title */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 83px;
+height: 21px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Phone Number */
+
+width: 83px;
+height: 19px;
+
+/* Medium/Type@12
+
+The quick brown fox jumps over the lazy dog
+*/
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 160%;
+/* or 19px */
+letter-spacing: -0.02em;
+
+color: #6C7278;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Input Area */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 27px 14px 27px 0px;
+gap: 10px;
+
+width: 327px;
+height: 46px;
+
+/* Primary/0
+
+#FFFFFF
+*/
+background: #FFFFFF;
+/* Secondary/100
+
+#EDF1F3
+*/
+border: 1px solid #EDF1F3;
+box-shadow: 0px 1px 2px rgba(228, 229, 231, 0.24);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Country */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 27px 14px;
+gap: 7px;
+
+width: 62px;
+height: 48px;
+
+/* Primary/0
+
+#FFFFFF
+*/
+background: #FFFFFF;
+/* Secondary/100
+
+#EDF1F3
+*/
+border: 1px solid #EDF1F3;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Countries/United Kingdom */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Circle/George Cross */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #EEEEEE;
+
+
+/* Outline */
+
+position: absolute;
+visibility: hidden;
+left: 0.39%;
+right: 0.39%;
+top: 0.39%;
+bottom: 0.39%;
+
+background: #0000FF;
+transform: rotate(-90deg);
+
+
+/* Cross */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #D80027;
+transform: rotate(-90deg);
+
+
+/* Quarters New */
+
+position: absolute;
+visibility: hidden;
+left: 7.32%;
+right: 7.32%;
+top: 7.32%;
+bottom: 7.32%;
+
+
+
+/* Circle/Canton */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Canton */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 0%;
+bottom: 50%;
+
+background: #D80027;
+
+
+/* Intersect */
+
+position: absolute;
+width: 6.05px;
+height: 8.75px;
+left: 0.91px;
+top: 0.75px;
+
+background: #FFDA44;
+
+
+/* Circle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FF00FF;
+
+
+/* cq */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.08%;
+right: 61.33%;
+top: 3.75%;
+bottom: 47.23%;
+
+background: #FFDA44;
+
+
+/* arrow-down */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/arrow-down */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 0px;
+top: 0px;
+
+
+
+/* arrow-down */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 17%;
+right: 17%;
+top: 37.29%;
+bottom: 33.14%;
+
+/* Secondary/400
+
+#6C7278
+*/
+border: 1.3px solid #6C7278;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* (+12) - */
+
+width: 207px;
+height: 21px;
+
+/* Body Small/Medium
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable.
+*/
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+letter-spacing: -0.01em;
+
+/* Secondary/500 */
+color: #1A1C1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+isolation: isolate;
+
+width: 327px;
+height: 69px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Title */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 76px;
+height: 21px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Email */
+
+width: 76px;
+height: 19px;
+
+/* Medium/Type@12
+
+The quick brown fox jumps over the lazy dog
+*/
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 160%;
+/* or 19px */
+letter-spacing: -0.02em;
+
+color: #6C7278;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Input Area */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 27px 14px;
+gap: 10px;
+
+width: 327px;
+height: 46px;
+
+/* Primary/0
+
+#FFFFFF
+*/
+background: #FFFFFF;
+border: 1px solid #EDF1F3;
+box-shadow: 0px 1px 2px rgba(228, 229, 231, 0.24);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Frame 33825 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 273px;
+height: 21px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* user
+
+user
+person
+account
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* yourname@gmail.com| */
+
+width: 207px;
+height: 21px;
+
+/* Body Small/Medium
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable.
+*/
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+letter-spacing: -0.01em;
+
+/* Secondary/500 */
+color: #1A1C1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* eye-off
+
+eye
+off
+view
+watch
+icon
+stroke
+outline
+*/
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Secondary/300
+
+#ACB5BB
+*/
+border: 1.3px solid #ACB5BB;
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 10px;
+
+width: 327px;
+height: 48px;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%), #1D61E7;
+box-shadow: 0px 1px 2px rgba(37, 62, 167, 0.48), 0px 0px 0px 1px #375DFB;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* plus
+
+plus
+add
+create
+new
++
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Label Text */
+
+width: 55px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* identical to box height, or 20px */
+text-align: center;
+letter-spacing: -0.01em;
+
+/* Primary/0 */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* arrow-narrow-right
+
+arrow
+narrow
+right
+next
+proceed
+point
+pointer
+icon
+stroke
+outline
+*/
+
+display: none;
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Native / Status Bar */
+
+position: absolute;
+width: 375px;
+height: 44px;
+left: 0px;
+top: 0px;
+
+
+
+/* 9:41 */
+
+position: absolute;
+width: 33px;
+height: 16px;
+left: 30px;
+top: calc(50% - 16px/2);
+
+/* Regular/None/Medium */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+display: flex;
+align-items: center;
+
+/* Neutral/White */
+color: #FFFFFF;
+
+
+
+/* Status Phone */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 1px 0px;
+gap: 5px;
+
+position: absolute;
+width: 70.25px;
+height: 15px;
+left: 283px;
+top: 15px;
+
+
+
+/* Mobile Signal */
+
+width: 18px;
+height: 10px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Mobile Signal */
+
+position: absolute;
+left: 0%;
+right: 74.38%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Neutral/White */
+background: #FFFFFF;
+
+
+/* Cellular_Connection-path */
+
+position: absolute;
+width: 3px;
+height: 4px;
+right: 67.25px;
+top: calc(50% - 4px/2 + 3px);
+
+background: #DADADA;
+
+
+/* Cellular_Connection-path */
+
+position: absolute;
+width: 3px;
+height: 6px;
+right: 62.25px;
+top: calc(50% - 6px/2 + 2px);
+
+background: #DADADA;
+
+
+/* Cellular_Connection-path */
+
+position: absolute;
+width: 3px;
+height: 8px;
+right: 57.25px;
+top: calc(50% - 8px/2 + 1px);
+
+background: #DADADA;
+
+
+/* Cellular_Connection-path */
+
+position: absolute;
+width: 3px;
+height: 10px;
+right: 52.25px;
+top: calc(50% - 10px/2);
+
+background: #DADADA;
+
+
+/* Wifi */
+
+width: 15.27px;
+height: 10.97px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Union */
+
+position: absolute;
+width: 15.27px;
+height: 10.97px;
+left: 23px;
+top: 2.02px;
+
+/* Neutral/White */
+background: #FFFFFF;
+
+
+/* Wifi-path */
+
+position: absolute;
+width: 15.27px;
+height: 4.74px;
+right: 31.98px;
+top: calc(50% - 4.74px/2 - 3.11px);
+
+background: #000000;
+
+
+/* Wifi-path */
+
+position: absolute;
+width: 9.95px;
+height: 3.63px;
+right: 34.64px;
+top: calc(50% - 3.63px/2 + 0.13px);
+
+background: #000000;
+
+
+/* Wifi-path */
+
+position: absolute;
+width: 4.63px;
+height: 3.37px;
+right: 37.3px;
+top: calc(50% - 3.37px/2 + 3.8px);
+
+background: #000000;
+
+
+/* Battery */
+
+width: 26.98px;
+height: 13px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Battery */
+
+position: absolute;
+left: 61.6%;
+right: 0%;
+top: 6.67%;
+bottom: 6.67%;
+
+
+
+/* Rectangle */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 25px;
+height: 13px;
+right: 1.98px;
+top: calc(50% - 13px/2);
+
+mix-blend-mode: normal;
+opacity: 0.2;
+/* Neutral/White */
+border: 1px solid #FFFFFF;
+border-radius: 2.66667px;
+
+
+/* Combined Shape */
+
+position: absolute;
+width: 1.33px;
+height: 4px;
+right: 0px;
+top: calc(50% - 4px/2 - 0.5px);
+
+/* Neutral/White */
+background: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.2;
+
+
+/* Rectangle */
+
+position: absolute;
+width: 20.2px;
+height: 8.33px;
+right: 4.48px;
+top: calc(50% - 8.33px/2 - 0px);
+
+/* Neutral/White */
+background: #FFFFFF;
+border-radius: 1.33333px;
+
+
+/* Native / Home Indicator */
+
+position: absolute;
+width: 375px;
+height: 34px;
+left: 0px;
+bottom: 0px;
+
+
+
+/* rectangle */
+
+position: absolute;
+width: 148px;
+height: 5px;
+left: calc(50% - 148px/2 + 0.5px);
+bottom: 8px;
+
+/* Greyscale/900 */
+background: #111827;
+border-radius: 100px;
