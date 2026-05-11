@@ -225,16 +225,17 @@ class AuthService:
                 )
 
             # Step 4: Check email verification status
-            if not user.is_verified:
-                logger.info(f"Login attempt with unverified email: {user.id}")
-                return (
-                    False,
-                    {
-                        "code": "EMAIL_NOT_VERIFIED",
-                        "message": "Please verify your email before logging in",
-                        "status_code": 403,
-                    },
-                )
+            # TEMP: Disabled while activation/verification flow is under development.
+            # if not user.is_verified:
+            #     logger.info(f"Login attempt with unverified email: {user.id}")
+            #     return (
+            #         False,
+            #         {
+            #             "code": "EMAIL_NOT_VERIFIED",
+            #             "message": "Please verify your email before logging in",
+            #             "status_code": 403,
+            #         },
+            #     )
 
             # Step 5: Check account status
             if not user.is_active:
@@ -244,6 +245,7 @@ class AuthService:
                     {
                         "code": "ACCOUNT_INACTIVE",
                         "message": "Your account has been deactivated",
+                        
                         "status_code": 403,
                     },
                 )
