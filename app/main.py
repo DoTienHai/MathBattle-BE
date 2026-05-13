@@ -9,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from app.database.connection import init_db, drop_db
 from app.api.v1 import auth
+from app.api.v1.games import quick_calculate
 
 # Configure logging
 logging.basicConfig(
@@ -57,6 +58,7 @@ async def health_check():
 
 # Include routers
 app.include_router(auth.router, prefix=settings.API_V1_STR)
+app.include_router(quick_calculate.router, prefix=settings.API_V1_STR)
 
 
 if __name__ == "__main__":

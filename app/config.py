@@ -39,7 +39,7 @@ class Settings(BaseSettings):
     REGISTRATION_RATE_LIMIT: str = "5/hour"  # 5 registration attempts per hour
 
     # CORS
-    CORS_ORIGINS: list = ["http://localhost:3000", "http://localhost:8000", "http://localhost:8081"]
+    CORS_ORIGINS: list = ["http://localhost:3000", "http://localhost:8000", "http://localhost:8081", "http://192.168.0.102:8081"]
     CORS_ALLOW_CREDENTIALS: bool = True
     CORS_ALLOW_METHODS: list = ["*"]
     CORS_ALLOW_HEADERS: list = ["*"]

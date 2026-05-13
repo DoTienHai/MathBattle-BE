@@ -62,6 +62,11 @@ class User(BaseModel):
         back_populates="user",
         cascade="all, delete-orphan"
     )
+    game_sessions = relationship(
+        "GameSession",
+        back_populates="user",
+        cascade="all, delete-orphan",
+    )
 
     __table_args__ = (
         Index("idx_email_lower", "email"),
