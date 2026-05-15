@@ -72,12 +72,14 @@ async def _next_op(client, headers, session_id: str) -> dict:
 
 
 async def _correct_answer_for(op_id: str, test_db) -> int:
-    """Query the DB to get the correct answer for an operation via its linked Question."""
+    """Query the DB to get the correct answer for an operation (bank or generated source)."""
     async with test_db() as db:
         op_result = await db.execute(
             select(SessionOperation).where(SessionOperation.id == uuid.UUID(op_id))
         )
         op = op_result.scalar_one()
+        if op.question_source == "generated":
+            return op.question_correct_answer
         q_result = await db.execute(
             select(Question).where(Question.id == op.question_id)
         )
@@ -92,19 +94,56 @@ class TestStartSession:
         assert r.status_code == 201
         assert "session_id" in r.json()["data"]
 
+    async def test_new_session_has_resumed_false(self, async_client, verified_user, auth_headers):
+        r = await async_client.post(f"{BASE}/sessions", headers=auth_headers)
+        assert r.json()["data"]["resumed"] is False
+
     async def test_initial_ramp_level_is_1(self, async_client, verified_user, auth_headers):
         r = await async_client.post(f"{BASE}/sessions", headers=auth_headers)
-        cfg = r.json()["data"]["initial_ramp_config"]
+        data = r.json()["data"]
+        assert data["resumed"] is False
+        cfg = data["initial_ramp_config"]
         assert cfg["ramp_level"] == 1
-        assert cfg["time_limit_per_question"] == 15.0
+        assert cfg["time_limit_per_question"] == 10.0
         assert cfg["max_questions"] is None
         assert cfg["max_errors_allowed"] == 1
 
-    async def test_duplicate_session_returns_409(self, async_client, verified_user, auth_headers):
-        await async_client.post(f"{BASE}/sessions", headers=auth_headers)
+    async def test_resume_returns_existing_session(self, async_client, verified_user, auth_headers):
+        """Calling POST /sessions while a session is active resumes it — no 409."""
+        r1 = await async_client.post(f"{BASE}/sessions", headers=auth_headers)
+        original_id = r1.json()["data"]["session_id"]
+
+        r2 = await async_client.post(f"{BASE}/sessions", headers=auth_headers)
+        assert r2.status_code == 201
+        data = r2.json()["data"]
+        assert data["resumed"] is True
+        assert data["session_id"] == original_id
+
+    async def test_resume_ramp_reflects_progress(
+        self, async_client, verified_user, auth_headers, test_db
+    ):
+        """Resumed session's ramp_level derives from current correct_count, not reset to zero."""
+        from app.utils.difficulty_ramp import get_difficulty_params_for_count
+
+        sid = await _start(async_client, auth_headers)
+
+        # Answer 5 questions correctly — ramp advances (level 2 starts at correct_count=3)
+        for _ in range(5):
+            op = await _next_op(async_client, auth_headers, sid)
+            correct = await _correct_answer_for(op["operation_id"], test_db)
+            await async_client.post(
+                f"{BASE}/sessions/{sid}/answer",
+                headers=auth_headers,
+                json={"operation_id": op["operation_id"], "answer": str(correct)},
+            )
+
         r = await async_client.post(f"{BASE}/sessions", headers=auth_headers)
-        assert r.status_code == 409
-        assert r.json()["detail"]["code"] == "SESSION_ALREADY_ACTIVE"
+        data = r.json()["data"]
+        assert data["resumed"] is True
+        assert data["session_id"] == sid
+        expected = get_difficulty_params_for_count(5)
+        assert data["initial_ramp_config"]["ramp_level"] == expected["level"]
+        assert data["initial_ramp_config"]["time_limit_per_question"] == expected["time_limit"]
 
     async def test_unauthenticated_returns_401(self, async_client):
         r = await async_client.post(f"{BASE}/sessions")
@@ -121,9 +160,15 @@ class TestNextOperation:
     async def test_returns_operation_fields(self, async_client, verified_user, auth_headers):
         sid = await _start(async_client, auth_headers)
         op = await _next_op(async_client, auth_headers, sid)
-        for field in ("operation_id", "question_id", "question_index", "content", "time_limit", "generated_at"):
+        for field in ("operation_id", "question_id", "question_source", "question_index", "content", "time_limit", "generated_at"):
             assert field in op
         assert isinstance(op["content"], str)
+
+    async def test_question_source_is_generated(self, async_client, verified_user, auth_headers):
+        sid = await _start(async_client, auth_headers)
+        op = await _next_op(async_client, auth_headers, sid)
+        assert op["question_source"] == "generated"
+        assert op["question_id"] is None
 
     async def test_correct_answer_not_in_response(self, async_client, verified_user, auth_headers):
         sid = await _start(async_client, auth_headers)
@@ -138,7 +183,7 @@ class TestNextOperation:
     async def test_time_limit_matches_ramp_level_1(self, async_client, verified_user, auth_headers):
         sid = await _start(async_client, auth_headers)
         op = await _next_op(async_client, auth_headers, sid)
-        assert op["time_limit"] == 15.0
+        assert op["time_limit"] == 10.0
 
     async def test_invalid_session_returns_404(self, async_client, verified_user, auth_headers):
         r = await async_client.post(
@@ -408,38 +453,39 @@ class TestEndSession:
 # ── SF06: Difficulty Ramp (unit tests) ───────────────────────────────────────
 
 class TestDifficultyRamp:
-    def test_level_1_player_starts_at_level_1(self):
-        from app.utils.difficulty_ramp import get_difficulty_params_for_count
+    def test_zero_correct_starts_at_level_1_and_base_time(self):
+        from app.utils.difficulty_ramp import get_difficulty_params_for_count, BASE_TIME_LIMIT
 
-        params = get_difficulty_params_for_count(0, 1)
+        params = get_difficulty_params_for_count(0)
         assert params["level"] == 1
-        assert params["time_limit"] == 15.0
+        assert params["time_limit"] == BASE_TIME_LIMIT
         assert set(params.keys()) == {"level", "time_limit"}
 
-    def test_correct_count_advances_level(self):
+    def test_correct_count_advances_level_every_3(self):
         from app.utils.difficulty_ramp import get_difficulty_params_for_count
 
-        assert get_difficulty_params_for_count(5, 1)["level"] == 2
-        assert get_difficulty_params_for_count(10, 1)["level"] == 3
+        # Level increments every 3 correct answers
+        assert get_difficulty_params_for_count(0)["level"] == 1
+        assert get_difficulty_params_for_count(2)["level"] == 1
+        assert get_difficulty_params_for_count(3)["level"] == 2
+        assert get_difficulty_params_for_count(5)["level"] == 2
+        assert get_difficulty_params_for_count(6)["level"] == 3
+        assert get_difficulty_params_for_count(9)["level"] == 4
 
-    def test_player_level_sets_base_level(self):
-        from app.utils.difficulty_ramp import get_difficulty_params_for_count
+    def test_time_limit_increases_with_correct_count(self):
+        from app.utils.difficulty_ramp import get_difficulty_params_for_count, BASE_TIME_LIMIT, TIME_BONUS_PER_LEVEL
 
-        # player_level=10 → base_level=max(10-5,1)=5
-        assert get_difficulty_params_for_count(0, 10)["level"] == 5
-        # player_level=3 → base_level=max(3-5,1)=1
-        assert get_difficulty_params_for_count(0, 3)["level"] == 1
+        t0 = get_difficulty_params_for_count(0)["time_limit"]
+        t3 = get_difficulty_params_for_count(3)["time_limit"]
+        t6 = get_difficulty_params_for_count(6)["time_limit"]
+        assert t0 == BASE_TIME_LIMIT
+        assert t3 == BASE_TIME_LIMIT + TIME_BONUS_PER_LEVEL
+        assert t6 == BASE_TIME_LIMIT + 2 * TIME_BONUS_PER_LEVEL
 
-    def test_time_limit_decreases_with_correct_count(self):
-        from app.utils.difficulty_ramp import get_difficulty_params_for_count
+    def test_time_limit_never_below_base(self):
+        from app.utils.difficulty_ramp import get_difficulty_params_for_count, BASE_TIME_LIMIT
 
-        t0 = get_difficulty_params_for_count(0, 1)["time_limit"]
-        t5 = get_difficulty_params_for_count(5, 1)["time_limit"]
-        assert t5 == t0 - 1.0
-
-    def test_time_floor_never_below_3(self):
-        from app.utils.difficulty_ramp import get_difficulty_params_for_count, MIN_TIME_LIMIT
-
-        t = get_difficulty_params_for_count(1000, 1)["time_limit"]
-        assert t >= MIN_TIME_LIMIT
+        # Time limit starts at BASE_TIME_LIMIT and only increases — never below it
+        for n in range(0, 100, 3):
+            assert get_difficulty_params_for_count(n)["time_limit"] >= BASE_TIME_LIMIT
 

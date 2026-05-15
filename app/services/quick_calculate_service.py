@@ -14,6 +14,7 @@ from app.models.question import Question
 from app.models.session_operation import SessionOperation
 from app.models.user import UserProfile
 from app.utils.difficulty_ramp import get_difficulty_params_for_count
+from app.utils.question_generator import GenerationError, generate_math_question
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +26,11 @@ _MAX_ERRORS_ALLOWED: int = 1  # Quick Calculate: end on first wrong answer or ti
 
 async def start_session(user_id: int, db: AsyncSession) -> dict:
     """
-    SF01: Initialize a Quick Calculate game session.
+    SF01: Start or resume a Quick Calculate game session.
+
+    If the user already has an active session (e.g. exited mid-game), that session
+    is returned with its current ramp config instead of creating a new one.
+    The `resumed` flag in the response tells the caller which case occurred.
 
     Precondition: user_id is authenticated (provided by FastAPI dependency).
 
@@ -34,22 +39,32 @@ async def start_session(user_id: int, db: AsyncSession) -> dict:
         db: Async database session.
 
     Returns:
-        Dict with session_id, initial_ramp_config, started_at.
-
-    Raises:
-        HTTPException 409: If the user already has an active session.
+        Dict with session_id, resumed, initial_ramp_config, started_at.
+        When resumed=True, ramp_level and time_limit reflect the session's
+        current correct_count rather than starting values.
     """
-    existing = await db.execute(
+    existing_result = await db.execute(
         select(GameSession).where(
             GameSession.user_id == user_id,
             GameSession.status == "active",
         )
-    ) # Check for existing active session
-    if existing.scalar_one_or_none():
-        raise HTTPException(
-            status_code=status.HTTP_409_CONFLICT,
-            detail={"code": "SESSION_ALREADY_ACTIVE", "message": "You already have an active session"},
-        ) # Prevent multiple concurrent sessions
+    )
+    existing = existing_result.scalar_one_or_none()
+    if existing:
+        correct_count = await _get_correct_count(existing.id, db)
+        resumed_params = get_difficulty_params_for_count(correct_count)
+        logger.info("Session %s resumed for user %d", existing.id, user_id)
+        return {
+            "session_id": str(existing.id),
+            "resumed": True,
+            "initial_ramp_config": {
+                "ramp_level": resumed_params["level"],
+                "time_limit_per_question": resumed_params["time_limit"],
+                "max_questions": None,
+                "max_errors_allowed": _MAX_ERRORS_ALLOWED,
+            },
+            "started_at": existing.created_at.isoformat() + "Z",
+        }
 
     profile_result = await db.execute(
         select(UserProfile).where(UserProfile.user_id == user_id)
@@ -69,9 +84,10 @@ async def start_session(user_id: int, db: AsyncSession) -> dict:
 
     logger.info("Session %s started for user %d", session.id, user_id)
 
-    initial_params = get_difficulty_params_for_count(0, level_at_start)
+    initial_params = get_difficulty_params_for_count(0)
     return {
         "session_id": str(session.id),
+        "resumed": False,
         "initial_ramp_config": {
             "ramp_level": initial_params["level"],
             "time_limit_per_question": initial_params["time_limit"],
@@ -88,7 +104,10 @@ async def generate_next_operation(session_id: str, user_id: int, db: AsyncSessio
     """
     SF02: Generate the next math operation for the session.
 
-    Creates a Question record then a SessionOperation linking it to the session.
+    Supports two question sources:
+    - "bank": fetches a pre-seeded Question from the questions table (current default)
+    - "generated": creates a question algorithmically and stores content+answer inline
+
     Difficulty is derived from the session's current correct answer count (SF06 ramp).
 
     Args:
@@ -97,34 +116,64 @@ async def generate_next_operation(session_id: str, user_id: int, db: AsyncSessio
         db: Async database session.
 
     Returns:
-        Dict with operation_id, question_id, question_index, content, time_limit, generated_at.
-        The correct_answer is stored in the questions table only — never sent to the client.
+        Dict with operation_id, question_id (null if generated), question_source,
+        question_index, content, time_limit, generated_at.
+        correct_answer is never sent to the client.
     """
     session = await _get_active_session(session_id, user_id, db)
 
     correct_count = await _get_correct_count(session.id, db)
     total_count = await _get_total_count(session.id, db)
-    ramp = get_difficulty_params_for_count(correct_count, session.level_player_at_start)
+    ramp = get_difficulty_params_for_count(correct_count)
 
-    last_question_id = await _get_last_question_id(session.id, db)
-    question = await _fetch_question_for_level(ramp["level"], last_question_id, db)
+    question_source = "generated"
 
-    operation = SessionOperation(
-        session_id=session.id,
-        user_id=user_id,
-        question_id=question.id,
-        question_index=total_count,
-        time_limit=ramp["time_limit"],
-    )
+    if question_source == "bank":
+        last_question_id = await _get_last_question_id(session.id, db)
+        question = await _fetch_question_for_level(ramp["level"], last_question_id, db)
+        operation = SessionOperation(
+            session_id=session.id,
+            user_id=user_id,
+            question_source="bank",
+            question_id=question.id,
+            question_index=total_count,
+            time_limit=ramp["time_limit"],
+        )
+        content = question.content
+        question_id_str = str(question.id)
+    else:
+
+        try:
+            gen = generate_math_question(ramp["level"])
+        except GenerationError as exc:
+            logger.error("Question generation invariant violated at level %d: %s", ramp["level"], exc)
+            raise HTTPException(
+                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                detail={"code": "NO_QUESTION_AVAILABLE", "message": "Question generation failed"},
+            )
+        operation = SessionOperation(
+            session_id=session.id,
+            user_id=user_id,
+            question_source="generated",
+            question_id=None,
+            question_content=gen["content"],
+            question_correct_answer=gen["correct_answer"],
+            question_index=total_count,
+            time_limit=ramp["time_limit"],
+        )
+        content = gen["content"]
+        question_id_str = None
+
     db.add(operation)
     await db.commit()
     await db.refresh(operation)
 
     return {
         "operation_id": str(operation.id),
-        "question_id": str(question.id),
+        "question_id": question_id_str,
+        "question_source": operation.question_source,
         "question_index": total_count,
-        "content": question.content,
+        "content": content,
         "time_limit": operation.time_limit,
         "generated_at": operation.created_at.isoformat() + "Z",
     }
@@ -168,7 +217,7 @@ async def record_timeout(
 
     await db.commit()
 
-    question = await _get_question(operation.question_id, db)
+    correct_answer = await _resolve_correct_answer(operation, db)
     wrong_count = await _get_wrong_count(session.id, db)
     correct_count = await _get_correct_count(session.id, db)
     current_streak = await _get_current_streak(session.id, db)
@@ -180,7 +229,7 @@ async def record_timeout(
     return {
         "operation_id": str(operation.id),
         "timed_out": True,
-        "correct_answer": question.correct_answer,
+        "correct_answer": correct_answer,
         "session_stats": {
             "correct_count": correct_count,
             "wrong_count": wrong_count,
@@ -250,16 +299,16 @@ async def submit_answer(
             detail={"code": "ANSWER_TOO_LATE", "message": "Answer submitted after the allowed time window"},
         )
 
-    question = await _get_question(operation.question_id, db)
+    correct_answer = await _resolve_correct_answer(operation, db)
 
     # SF04: record submission
     operation.user_answer = answer_int
     operation.submitted_at = now
     if client_submitted_at:
-        operation.client_submitted_at = client_submitted_at
+        operation.client_submitted_at = client_submitted_at.replace(tzinfo=None)
 
     # SF05: evaluate correctness
-    is_correct = (answer_int == question.correct_answer)
+    is_correct = (answer_int == correct_answer)
     operation.is_correct = is_correct
     operation.evaluated_at = now
 
@@ -270,7 +319,7 @@ async def submit_answer(
     current_streak = await _get_current_streak(session.id, db)
 
     if is_correct:
-        level = get_difficulty_params_for_count(correct_count, session.level_player_at_start)["level"]
+        level = get_difficulty_params_for_count(correct_count)["level"]
         logger.info(
             "Session %s: correct answer — correct_count=%d level=%d",
             session.id, correct_count, level,
@@ -285,7 +334,7 @@ async def submit_answer(
         "received": True,
         "server_received_at": now.isoformat() + "Z",
         "is_correct": is_correct,
-        "correct_answer": question.correct_answer,
+        "correct_answer": correct_answer,
         "user_answer": answer_int,
         "consecutive_correct": current_streak,
         "session_stats": {
@@ -369,7 +418,7 @@ async def _finalize_session(session: GameSession, end_reason: str, db: AsyncSess
     total = correct_count + wrong_count
     accuracy = round(correct_count / total * 100, 1) if total > 0 else 0.0
     duration = round((now - session.created_at).total_seconds(), 1)
-    max_ramp_level = get_difficulty_params_for_count(correct_count, session.level_player_at_start)["level"]
+    max_ramp_level = get_difficulty_params_for_count(correct_count)["level"]
 
     session.status = "completed"
     session.score = correct_count
@@ -458,7 +507,7 @@ async def _get_operation(
 
 
 async def _get_question(question_id: uuid.UUID, db: AsyncSession) -> Question:
-    """Load a question by ID."""
+    """Load a question by ID from the questions table."""
     result = await db.execute(select(Question).where(Question.id == question_id))
     question = result.scalar_one_or_none()
     if not question:
@@ -467,6 +516,18 @@ async def _get_question(question_id: uuid.UUID, db: AsyncSession) -> Question:
             detail={"code": "QUESTION_NOT_FOUND", "message": "Question record missing"},
         )
     return question
+
+
+async def _resolve_correct_answer(operation: SessionOperation, db: AsyncSession) -> int:
+    """Return the correct answer for an operation regardless of its question source.
+
+    - source="bank":      fetches correct_answer from the linked questions row
+    - source="generated": reads question_correct_answer stored inline on the operation
+    """
+    if operation.question_source == "bank":
+        question = await _get_question(operation.question_id, db)
+        return question.correct_answer
+    return operation.question_correct_answer
 
 
 async def _get_correct_count(session_id: uuid.UUID, db: AsyncSession) -> int:
@@ -558,19 +619,53 @@ async def _fetch_question_for_level(
     exclude_id: Optional[uuid.UUID],
     db: AsyncSession,
 ) -> Question:
-    """Fetch a random question at the given difficulty level, excluding the last seen."""
-    stmt = select(Question).where(
-        Question.type == "math",
-        Question.difficulty_level == level,
+    """Fetch a random question at the given difficulty level, excluding the last seen.
+
+    Falls back to the highest available level when the requested level has no questions,
+    then retries without the exclude guard if only one question exists at that level.
+    """
+    async def _query(target_level: int, excluded: Optional[uuid.UUID]) -> Optional[Question]:
+        stmt = select(Question).where(
+            Question.type == "math",
+            Question.difficulty_level == target_level,
+        )
+        if excluded is not None:
+            stmt = stmt.where(Question.id != excluded)
+        result = await db.execute(stmt.order_by(func.random()).limit(1))
+        return result.scalar_one_or_none()
+
+    question = await _query(level, exclude_id)
+    if question:
+        return question
+
+    # Requested level not available — find the highest level that exists
+    fallback_result = await db.execute(
+        select(Question.difficulty_level)
+        .where(Question.type == "math", Question.difficulty_level <= level)
+        .order_by(Question.difficulty_level.desc())
+        .limit(1)
     )
-    if exclude_id is not None:
-        stmt = stmt.where(Question.id != exclude_id)
-    stmt = stmt.order_by(func.random()).limit(1)
-    result = await db.execute(stmt)
-    question = result.scalar_one_or_none()
-    if not question:
+    fallback_level = fallback_result.scalar_one_or_none()
+
+    if fallback_level is None:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail={"code": "NO_QUESTION_AVAILABLE", "message": "No question available for this difficulty level"},
+            detail={"code": "NO_QUESTION_AVAILABLE", "message": "No questions in the database"},
         )
-    return question
+
+    if fallback_level != level:
+        logger.warning("No questions at level %d — falling back to level %d", level, fallback_level)
+
+    question = await _query(fallback_level, exclude_id)
+    if question:
+        return question
+
+    # Only one question at this level and it's excluded — drop the exclude guard
+    question = await _query(fallback_level, excluded=None)
+    if question:
+        return question
+
+    raise HTTPException(
+        status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+        detail={"code": "NO_QUESTION_AVAILABLE", "message": "No questions available"},
+    )
