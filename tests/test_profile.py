@@ -276,11 +276,12 @@ class TestUpdateProfile:
                 "confirm_password": "SecurePass123!",
             },
         )
-        await async_client.patch(
+        resp_a = await async_client.patch(
             UPDATE_URL,
             json={"username": "claimed_username"},
             headers={"Authorization": f"Bearer {token_a}"},
         )
+        assert resp_a.status_code == 200
         # User B tries to claim the same username
         token_b = await register_and_login(
             async_client,
