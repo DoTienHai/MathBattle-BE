@@ -7,7 +7,7 @@ from typing import Optional, Tuple
 from datetime import datetime, timedelta
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func
-from app.models.user import User, Token, LoginSession
+from app.models.user import User, UserProfile, UserSettings, Token, LoginSession
 from app.utils.security import PasswordHasher, PasswordValidator, EmailValidator, TokenGenerator
 
 logger = logging.getLogger(__name__)
@@ -96,17 +96,23 @@ class AuthService:
                     },
                 )
 
-            # Step 5: Create new user record
+            # Step 5: Create user + profile + settings atomically
             new_user = User(
-                email=email.lower(),  # Store email in lowercase
+                email=email.lower(),
                 password_hash=password_hash,
                 full_name=full_name if full_name else None,
-                is_verified=False,  # User must verify email
+                is_verified=False,
                 is_active=True,
             )
-
             session.add(new_user)
-            await session.flush()  # Flush to get the user ID
+            await session.flush()  # get new_user.id before creating child records
+
+            name_part = full_name.lower().replace(" ", "_")[:20] if full_name else "user"
+            
+            username = f"{name_part}_{new_user.id}"
+            session.add(UserProfile(user_id=new_user.id, username=username))
+            session.add(UserSettings(user_id=new_user.id))
+
             await session.commit()
 
             logger.info(f"User registered successfully: {email} (ID: {new_user.id})")
