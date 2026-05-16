@@ -11,7 +11,7 @@ Token Strategy: Stateless JWT (no database storage)
 
 from datetime import datetime
 from typing import Optional
-from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey, Index, CheckConstraint
+from sqlalchemy import Column, Integer, Float, String, Boolean, DateTime, ForeignKey, Index, CheckConstraint
 from sqlalchemy.orm import relationship
 from app.models.base import BaseModel
 
@@ -67,6 +67,11 @@ class User(BaseModel):
         back_populates="user",
         cascade="all, delete-orphan",
     )
+    badges = relationship(
+        "UserBadge",
+        back_populates="user",
+        cascade="all, delete-orphan",
+    )
 
     __table_args__ = (
         Index("idx_email_lower", "email"),
@@ -86,7 +91,10 @@ class UserProfile(BaseModel):
     # Profile data
     username = Column(String(30), nullable=False, unique=True, index=True)
     current_level = Column(Integer, default=1, nullable=False)
-    total_points = Column(Integer, default=0, nullable=False)
+    elo = Column(Integer, default=1000, nullable=False)
+    current_streak = Column(Integer, default=0, nullable=False)
+    longest_streak = Column(Integer, default=0, nullable=False)
+    win_rate = Column(Float, default=0.0, nullable=False)
     profile_completed = Column(Boolean, default=False, nullable=False)
 
     # Relationships
@@ -94,7 +102,10 @@ class UserProfile(BaseModel):
 
     __table_args__ = (
         CheckConstraint("current_level >= 1 AND current_level <= 100", name="check_level_range"),
+        CheckConstraint("elo >= 0", name="check_elo_non_negative"),
+        CheckConstraint("win_rate >= 0.0 AND win_rate <= 1.0", name="check_win_rate_range"),
         Index("idx_username_lower", "username"),
+        Index("idx_user_profiles_elo", "elo"),
     )
 
 
